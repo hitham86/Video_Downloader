@@ -11,4 +11,7 @@ Progress Tracking – Displays a progress bar for active downloads.
 
 Download History – Keeps a log of completed downloads.
 
-Automatic Folder Creation – Saves videos in the Downloads/VideoDownloader folder.
+Automatic Folder Creation – Saves videos in the Downloads/VideoDownloader folder. 
+
+
+THANK YOU
