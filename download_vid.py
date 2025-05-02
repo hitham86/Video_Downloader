@@ -44,7 +44,6 @@ class VideoDownloader:
         self.history_text.insert('1.0', f"[{timestamp}] {message}\n")
 
     def download_video(self):
-        #Main download function
         url = self.url_entry.get().strip()
 
         if not url:
@@ -53,7 +52,7 @@ class VideoDownloader:
 
         self.update_status("Downloading video...")
 
-        # Reset progress bar
+        
         self.progress['value'] = 0
         self.window.update_idletasks()
 
@@ -61,7 +60,7 @@ class VideoDownloader:
 
         ydl_opts = {
             'outtmpl': output_template,
-            'format': 'best',  # Get best quality available
+            'format': 'best',  
             'progress_hooks': [self.update_progress],
         }
 
@@ -85,7 +84,7 @@ class VideoDownloader:
                 pass
 
     def run(self):
-        #Start the application
+        
         self.window.mainloop()
 
 if __name__ == "__main__":
